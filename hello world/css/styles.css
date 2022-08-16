@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  /* Created with https://www.css-gradient.com */
+  background: #6A06D6;
+  background: -webkit-linear-gradient(top left, #6A06D6, #E894DD);
+  background: -moz-linear-gradient(top left, #6A06D6, #E894DD);
+  background: linear-gradient(to bottom right, #6A06D6, #E894DD);
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eee;
+  text-shadow: 5px 2px 4px #424242;
+
+}
+
+span {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 4rem;
+  color: #eee;
+  text-shadow: 5px 2px 4px #424242;
+
+  overflow: hidden;
+  white-space: nowrap;
+  animation: caret .5s step-end infinite alternate, type 3s steps(5, end);
+  box-shadow: 1rem 0 0 #E894DD;
+  width: 5ch;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes caret {
+  50% {
+    box-shadow: 1rem 0 0 transparent;
+  }
+}
